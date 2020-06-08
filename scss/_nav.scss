@@ -1,0 +1,52 @@
+nav {
+    background-color: transparent;
+    z-index: 999;
+    .logo {
+        img{
+            height: 35px;
+        }
+    }
+    @include flex-row;
+      .box {
+          list-style: none;
+          width: 100%;
+          padding-left: $padding/3;
+          text-align: center;
+          margin-top: 0;
+          display: none; 
+
+          .show & {
+              display: block;
+          }
+
+           & li {
+               @include li;
+               line-height: 1.5;
+           }
+           & li a {
+                @include a;
+            }
+      }
+     
+      .item a {
+          font-weight: bold;
+          font-size: 18px;
+          border-bottom: 3px solid $brand-color-dark;
+       }
+     
+      .box1 {
+          display: none;
+          padding-left: $padding/5;
+        
+        & li {
+            padding-top: $padding/6;
+        }
+
+        & li:hover{
+           background-color: rgba(201, 184, 32, 0.788);
+           cursor: pointer;
+        }
+      }
+
+      @include desktop;
+}

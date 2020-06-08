@@ -1,0 +1,97 @@
+.form-info {
+    margin-top: $padding; 
+    
+    @include largeTablet {
+        display: flex;
+        justify-content: center;
+
+        .form-topic {
+            padding-right: $padding*2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    
+    h2{
+        color: $brand-color;
+    }  
+    .container {
+        max-width: 1000px;
+        margin: 30px 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+                    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        form {
+            padding-top: 20px;
+        }
+        label {
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .form-control {
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid #eee;
+            height: 36px;
+            line-height: 22px;
+            outline: 0;
+            padding: 8px 0 7px;
+            border-radius: 0;
+            font-size: 14px;
+        }
+        .form-group-label {
+            position: relative;
+            margin: 20px 0;
+        }
+        .float-label {
+            position: absolute;
+            top: 11px;
+            left: 0;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+        .bar {
+            text-align: right;
+            padding-bottom: 6px;
+            .button {
+                background-color: transparent;
+                border: none;
+                padding: 8px 16px;
+                color: $brand-color;
+                text-align: center;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color:#f1f1f1;
+                }
+            }
+        }
+    }
+
+    .control-focus .float-label {
+        color: $brand-color;
+        -webkit-transform: scale(0.8, 0.8) translateY(-32px);
+        transform: scale(0.8, 0.8) translateY(-32px);
+    }
+}
+
+  .control-focus .form-control {
+      border-bottom: 2px solid $brand-color;
+  }
+
+  .control-highlight .float-label {
+      color: #888;
+      -webkit-transform: scale(0.8, 0.8) translateY(-32px);
+      transform: scale(0.8, 0.8) translateY(-32px);
+  }
+
+  .control-highlight .form-control {
+      border-bottom: 1px solid #eee;
+  }

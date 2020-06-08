@@ -1,0 +1,42 @@
+// Global Variables
+
+//Colors 
+$brand-color: rgb(255, 123, 0);
+//@include
+$brand-color-dark: darken($brand-color, 10);
+$brand-color-light: lighten ($brand-color, 20);
+$body-bg-color: #303030;
+$wrapper-bg-color: #fff;
+//Text COlor
+$text-color-dark: black;
+$text-color-light: white;
+
+//Fonts
+$body-font: 'PT Serif',
+serif;
+$heading-font: 'Lemonada',
+cursive;
+
+//Type Default
+$line-height: 1.4;
+
+//Layout
+$padding: 30px;
+$gutter: 2;
+
+//Link Hover Selector
+$hover: '&:hover, $:focus, $:active';
+
+//Utility Function 
+//Em Function
+
+// ~ Convert px to em
+//Defines to a base fonts size of 16...
+@function em($px, $bc: 16) {
+    @return #{$px/$bc};
+}
+
+//Media Query Breakpoints
+$phoneLandScape:em(670);
+$tabletPortrait: em(850);
+$deskTopMedium:em(1250);

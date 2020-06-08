@@ -1,0 +1,24 @@
+.your-order {
+
+    padding: 10px;
+
+    .logo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 10px;
+    
+        img {
+            width: 15%;
+            background-color: #fff;
+            margin-right: 10px;
+        }
+    }
+
+    @media (min-width: 660px) {
+            
+        display: flex;
+    }
+
+
+}

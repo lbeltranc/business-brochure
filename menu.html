@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159675536-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159675536-1');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <title>Menu</title>
+    <script type="text/javascript" src="./js/jquery1.7.js">
+    </script>
+</head>
+<body>
+  <header>
+      <nav>
+        <h1><a href="index.html" class="logo">
+            <img src="images/logo.png" alt=""></a></h1>
+        <button class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="box">
+            <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a href="menu.html">Menu</a></li>
+            <li class="item"><a href="promotion.html">Promotions</a></li>
+            <li class="item"><a href="location.html">Location</a></li>
+            <li class="item"><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+    
+    <main class="menu">
+        <h1>MENU</h1>
+        <div class="menu-cont">
+            <section class="breakfast">
+                <h2>Breakfast</h2>
+                <div class="main">
+                    <h3>Main</h3>
+                    <ul>
+                        <li class="item item1">
+                            <img src="images/sausage-eggs.jpeg" alt="Saussage and eggs">
+                            <p class="title">Saussage & eggs<br>$<span class="price" id="price">5.00</span></p>
+                        </li>
+                        <li class="item item2">
+                            <img src="images/bacon-eggs.jpg" alt="bacon and eggs">
+                            <p class="title">Saussage & eggs<br>$<span class="price" id="price">6.00</span></p>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="desserts">
+                    <h3>Desserts</h3>  
+                    <ul>
+                        <li class="item item3">
+                            <img src="images/pancake.jpg" alt="bagel and pancake">
+                            <p class="title">Bagel & pancake<br>$<span class="price" id="price">4.00</span></p>
+                        </li>
+                        <li class="item item4">
+                            <img src="images/donut-croissant.jpg" alt="donut and croissant">
+                            <p class="title">Donut & Croissant<br>$<span class="price" id="price">5.00</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lunch">
+                <h2>Lunch</h2>
+                <div class="burgers">
+                    <h3>Burgers</h3>
+                    <ul>
+                        <li class="item item5">
+                            <img src="images/fish-burger.jpeg" alt="Fish burger">
+                            <p class="title">Fish Burger<br>$<span class="price" id="price">8.00</span></p>
+                        </li>
+                        <li class="item item6">
+                            <img src="images/chicken-burger.jpg" alt="chickeb burger">
+                            <p class="title">Chicken Burger<br>$<span class="price" id="price">7.00</span></p>
+                        </li>
+                        <li class="item item7">
+                            <img src="images/beef-burger.jpg" alt="beef burger">
+                            <p class="title">Beef Burger<br>$<span class="price" id="price">8.00</span></p>
+                         </li>
+                    </ul>
+                    <div class="toppings"><p>Toppings: Tomatoes, Lettuce, Oniins, Bacon.</p></div>
+                </div>
+                <div class="fries">
+                    <h2>Fries</h2>
+                    <ul>
+                        <li class="item item8">
+                            <img src="images/french-fries.jpg" alt="french fries">
+                            <p class="title">French Fries<br>$<span class="price" id="price">5.00</span></p>
+                        </li>
+                        <li class="item item6">
+                            <img src="images/yam-fries.jpg" alt="yam fries">
+                            <p class="title">Yam Fries<br>$<span class="price" id="price">5.00</span></p>
+                        </li>
+                        <li class="item item7">
+                            <img src="images/regular-fries.jpg" alt="regular fries">
+                            <p class="title">Regular Fries<br>$<span class="price" id="price">4.00</span></p>
+                         </li>
+                    </ul>
+                    <div class="toppings"><p>Toppings: Bacon, Cheese, Chili.</p></div>
+                </div>
+            </section>
+            <section class="your-order">
+
+                <div class="logo">
+                    <img src="images/shopping-cart-logo.png" alt="shopping cart logo">
+                    <h2>Your Order</h2>
+                </div>
+                    <table class="order">
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Product</th>
+                            <th id="price-sum">Price</th>
+                        </tr>
+                        <tr>
+                            <td id="quantity">1</td>
+                            <td id="name">Fish Burger</td>
+                            <td id="price-sum">$8.00</td>
+                        </tr>
+                        <tr>
+                            <td id="quantity">1</td>
+                            <td id="name">Yam Fries</td>
+                            <td id="price-sum">$5.00</td>
+                        </tr>
+                    </table>
+                    <table class="order-total">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$13.00</td>
+                        </tr>
+                        <tr>
+                            <td>GST</td>
+                            <td>$0.65</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$13.65</td>
+                        </tr>
+                    </table>
+            </section>
+        </div>
+    </main>
+<!-- foot part -->
+<footer class="footer" id='footer'>
+    <div class="footer-info">
+        <div class="contact-info">
+            <h4>Orders</h4>
+            <p>FAQ/Delivery/Returns</p>
+            <p>Find a Retailer</p>
+            <p>Terms and Privacy</p>
+        </div>
+        <div class="contact-info">
+            <h4>Contact us</h4>
+            <p>Email or call us</p>
+            <p>Stay connected</p>
+            <p>Follow on Instagram</p>
+        </div>
+        <div class="contact-info">
+            <h4>About us</h4>
+            <p>Certifications</p>
+            <p>Company</p>
+            <p>Careers</p>
+        </div>
+    </div>
+    <!----end of footer-info --->
+    <div class="contact-icon">
+        <div class="row1">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-weixin"></i></a>
+        </div>
+        <div class="row2">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    </div>
+    <!----end of footer-->
+	
+	  <script src="./js/index.js"></script>
+	  </script>
+
+</body>
+</html>

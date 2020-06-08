@@ -1,0 +1,17 @@
+.lunch {
+   .burgers {
+        border-bottom: 1px dotted black;
+    }
+    .fries {
+        margin-top: 10px;
+    }
+
+    @media (min-width: 660px) {
+            
+        ul {
+                display: flex;
+
+        }
+
+    }
+}

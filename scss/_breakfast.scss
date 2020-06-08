@@ -1,0 +1,26 @@
+.breakfast {
+    
+    
+    
+
+    .main {
+        border-bottom: 1px dotted black;
+
+        
+    }
+
+    .desserts {
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    @media (min-width: 660px) {
+
+
+        ul {
+                display: flex;
+
+        }
+
+    }
+}

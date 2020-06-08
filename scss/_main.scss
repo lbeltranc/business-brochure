@@ -1,0 +1,157 @@
+main {
+    margin: 0 auto;
+    text-align: center;
+
+    .special-order {
+        padding: $padding/3;
+        text-align: center;
+        h2 {
+            padding-top: $padding/3;
+            margin-bottom: $padding/3;
+            font-size: 1.2em;
+            display: inline-block;
+        }
+
+        h2:hover {
+            border-bottom: 3px solid $brand-color;
+        }
+
+        .content {
+            padding: $padding/5 0;
+
+            .limit-order {
+                display: flex;
+                flex-direction: column;
+
+                img:hover {
+                    transform: scaleX(0.98);
+                    transition: 1s;
+                }
+            }
+
+            .info {
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: $brand-color;
+                color: whitesmoke;
+                padding: 6px;
+
+                p {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            
+                .btn {
+                    font-family: $body-font;
+                    font-weight: 700;
+                    width: 120px;
+                    align-self: center;
+                    text-align: center;
+                    margin-top: 4px;
+                    margin-bottom: 10px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    background-color: whitesmoke;
+                }
+            }
+            @include smallDesktop {
+                display: flex;
+                img {
+                    max-width: 100%;
+                }
+                .info {
+                    width: 70%;
+                    h2 {
+                        font-size: 30px;
+                        padding-top: 24px;
+                    }
+                    p{ 
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                        padding-left: $padding;
+                        padding-right: $padding;
+                    }
+
+                }
+            }
+        }
+       
+    }
+    .supporter-info {
+        margin-top: $padding;
+        margin-bottom: $padding;
+        max-width: 1000px;
+        img {
+            padding-top: $padding/5;
+            align-items: center;
+            
+        }
+        @include smallDesktop {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// Main Styles for the about page only
+
+.about-store-article {
+    margin-bottom: $padding;
+    margin-left: 10px;
+    margin-right: 10px;
+    .about-store-content {
+        background-color: $brand-color;
+        color: #fff;
+        padding-bottom: $padding;
+        h1 {
+            padding-top: $padding;
+        }
+        p {
+            font-size: 16px;
+            padding-left: 40px;
+            padding-right: 40px;
+            line-height: 1.4;
+        }
+    }
+    @include smallDesktop {
+        display: flex; 
+        img {
+            max-width: 100vh;
+            max-height: 100vh;
+        }
+        .about-store-content {
+            margin-left: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }        
+    }
+}
+
+figure img {
+    box-shadow: 5px 5px 10px $body-bg-color;
+}
+
+//  Main Styles for the promotion page only
+.topic {
+    margin-top: 20px;
+    color: $brand-color;
+}
+.QR {
+    .QR1,
+    .QR2,
+    .QR3 {
+        h2 {
+            display: block;
+            
+            &:hover {
+                text-shadow: 2px 2px rgba(0,0,0,0.15);
+            }
+        }
+    }   
+}

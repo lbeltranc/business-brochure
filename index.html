@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159675536-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159675536-1');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="X-UA-Compatible" content="IE-edge">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+  <script type="text/javascript" src="./js/jquery1.7.js"></script>
+  <title>Business-Homepage</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1><a href="index.html" class="logo">
+          <img src="images/logo.png" alt=""></a></h1>
+      <button class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="box">
+        <li class="item"><a href="about.html">About</a></li>
+        <li class="item"><a href="menu.html">Menu</a></li>
+        <li class="item"><a href="promotion.html">Promotions</a></li>
+        <li class="item"><a href="location.html">Location</a></li>
+        <li class="item"><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+    <!-- banner -->
+    <div class="sliders">
+      <img src="./images/banner1.jpg" class="slider" alt="hamburger">
+      <img src="./images/banner2.jpg" class="slider" style="display: none"
+      alt="breakfast">
+      <img src="./images/banner4.jpg" alt="pancake" class="slider" alt="" style="display: none">
+      <img src="./images/banner5.jpg" alt="sausage-eggs" class="slider" alt="" style="display: none">
+      <img src="images/banner6.jpg" alt="drink" class="slider" alt="" style="display: none">
+      <span><i class="fas fa-chevron-circle-left" onclick=plusSlides(-1)></i></span>
+      <span><i class="fas fa-chevron-circle-right" onclick=plusSlides(1)></i></span>
+      <div class="bottom-btn">
+        <div class="center">
+          <span class="dots active" onclick="currSlide(1)"></span>
+          <span class="dots" onclick="currSlide(2)"></span>
+          <span class="dots" onclick="currSlide(3)"></span>
+          <span class="dots" onclick="currSlide(4)"></span>
+          <span class="dots" onclick="currSlide(5)"></span>    
+        </div>
+      </div>
+    </div> <!----end of slider-->
+  
+  <main>
+    <div class="special-order">
+      <h2>SPECIAL ORDERS</h2>
+      <div class="content">
+        <div class="limit-order">
+          <img src="images/limit-order1.jfif" alt="limit hamburger">
+        </div>
+        <div class="info">
+          <h2>COD BURGER</h2>
+          <p>The catch of the season is back. Made with sustainably-sourced, hand-cut strips of cod, crisp coleslaw and tangy tartar
+          sauce, our Wild-Caught Cod Burger is one tasty catch. It’s only around for a limited time, so grab one while you can.</p>
+          <button class="btn">LEARN MORE</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="limit-order">
+          <img src="images/limit-order2.jpg" alt="limit wrap">
+        </div>
+        <div class="info">
+          <h2>COD WRAP</h2>
+          <p>The catch of the season is back. Made with a sustainably-sourced, hand-cut strip of cod, crisp coleslaw and tangy tartar
+          sauce, our Wild-Caught Cod Wrap is one tasty catch. It’s only around for a limited time, so grab one while you can.</p>
+        <button class="btn">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="supporter-info">
+      <h2>SUPPORTERS</h2>
+      <div class="supporter">
+        <img src="images/supporters-01.jpg" alt="MacDonald">
+        <img src="images/supporters-02.jpg" alt="In n OUt">
+        <img src="images/supporters-03.jpg" alt="KFC">
+        <img src="images/supporters-04.jpg" alt="A&W">
+        <img src="images/supporters-05.jpg" class="img" alt="Burger King">
+        <img src="images/supporters-06.jpg" class="img" alt="DQ">
+      </div>
+    </div>
+  </main>
+  
+<!-- foot part -->
+  <footer class="footer" id='footer'>
+    <div class="footer-info">
+      <div class="contact-info">
+        <h4>Orders</h4>
+        <p>FAQ/Delivery/Returns</p>
+        <p>Find a Retailer</p>
+        <p>Terms and Privacy</p>
+      </div>
+      <div class="contact-info">
+        <h4>Contact us</h4>
+        <p>Email or call us</p>
+        <p>Stay connected</p> 
+        <p>Follow on Instagram</p> 
+      </div>
+      <div class="contact-info">
+        <h4>About us</h4>
+        <p>Certifications</p>
+        <p>Company</p>
+        <p>Careers</p>
+      </div>
+    </div><!----end of footer-info --->
+    <div class="contact-icon">
+      <div class="row1">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-weixin"></i></a>
+      </div>
+      <div class="row2">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>  
+  </div><!----end of footer-->
+    
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

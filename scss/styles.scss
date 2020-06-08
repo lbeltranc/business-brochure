@@ -1,0 +1,41 @@
+// Sass Getting Started 
+
+// $bg: lightblue;
+// $tc: white;
+
+// body {
+//     background-color: $bg;
+//     color: $tc;
+// }
+
+//Imports
+
+//Utilities Imports
+@import 'variables';
+@import 'mixins';
+
+//Resets and Defaults
+@import 'resets';
+@import 'type';
+
+// Site Section
+@import 'body';
+@import 'main';
+@import 'header';
+@import 'hamburger';
+@import 'nav';
+@import 'main';
+@import 'footer';
+@import 'animation';
+@import 'location';
+// About 
+@import 'sliders';
+@import 'promotion';
+
+//Form 
+@import 'form';
+//Menu
+@import 'menu';
+@import 'breakfast';
+@import 'lunch';
+@import 'your-order';

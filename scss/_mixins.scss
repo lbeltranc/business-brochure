@@ -1,0 +1,90 @@
+// flex box
+@mixin flex-row($justify-content: space-between, $wrap: wrap) {
+    display: flex;
+    justify-content: $justify-content;
+    flex-wrap: $wrap;
+}
+
+@mixin li {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+@mixin a {
+    text-decoration: none;
+    color: $text-color-dark;
+}
+
+@mixin button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin desktop {
+    @media (min-width: 660px) {
+        .nav-icon {
+            display: none;
+        }
+        nav {
+            flex-wrap: nowrap;
+        }
+        .box {
+            display: block;
+            display: flex;
+            margin-top: 0;
+
+            & li {
+                flex: 1;
+                padding-top: $padding/2;
+                line-height: 0.9;
+            }
+
+            & li a {
+                border: none;
+            }
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                padding: 0 $padding/6;
+            }
+
+        }
+        .QR {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+        }
+        
+    }
+}
+
+
+
+//Footer section
+@mixin mediumTablet {
+    @media (min-width: 520px) {
+        @content;
+    }
+}
+
+//limit-offer
+@mixin smallDesktop {
+    @media (min-width: 850px) {
+        @content;
+    }
+}
+
+// for
+@mixin largeTablet {
+    @media (min-width: 670px) {
+        @content;
+    }
+}
+

@@ -1,0 +1,76 @@
+.footer {
+    border-top: 3px solid $brand-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    .footer-info {
+        padding-left: 20px;
+        
+        h4,p {
+            margin: 0;
+            padding-top: 6px;
+        }
+        h4 {
+            font-size: 20px;
+            display: inline-block;
+            
+            &:hover {
+                border-bottom: 2px solid $brand-color;
+            }
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .contact-icon {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        padding-right: 20px;
+        i {
+            margin-top: $padding/3;
+            margin-right: $padding/3;
+
+            &:hover {
+                background-color: #aaa;
+            }
+        }
+
+        .fa-facebook {
+            color: rgb(32, 124, 202);
+        }
+        .fa-weixin {
+            color: rgb(57, 130, 53);
+        }
+        .fa-linkedin {
+            color: rgb(37, 141, 200);
+        }
+        .fa-instagram {
+            color: rgb(232, 111, 217);
+        }
+    }
+
+    @include mediumTablet {
+ 
+        .footer-info {
+            margin-top: 5px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact-icon {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-left: 60px;
+        }
+    };
+}

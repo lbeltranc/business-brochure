@@ -1,0 +1,50 @@
+.sliders {
+    padding: 0 0 $padding*1.5;
+    // margin: -50px;
+    position: relative;
+
+    img {
+        margin: 0 auto;;
+    }
+
+    .fa-chevron-circle-left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 3%;
+        font-size: 30px;
+        color: $brand-color;
+    }
+
+    .fa-chevron-circle-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3%;
+        font-size: 30px;
+        color: $brand-color;
+    }
+
+    .center {
+        position: absolute;
+        text-align: center;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .dots {
+            width: 20px;
+            height: 20px;
+            border: 1px solid transparent;
+            background-color: rgba(241, 164, 91, 0.74);
+            border-radius: 50%;
+            margin: 2px;
+            display: inline-block;
+            cursor: pointer;
+
+            &.active {
+                background-color: orange;
+            }
+        }
+    }
+}
